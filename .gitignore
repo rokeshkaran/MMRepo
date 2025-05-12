@@ -1,0 +1,45 @@
+#Ignore SpecFlow feature.cs files
+*.feature.cs
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+*.obj
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
+/build/
+*.opensdf
+*.tlog
+TestResult.xml
+*.VisualState.xml
+Version.cs
+Version.h
+Version.cpp
+Autotest/Tests/QA/PublishedFilesTests/ViewMapFiles.feature_REMOTE_11652.cs
+Autotest/Tests/QA/PublishedFilesTests/ViewMapFiles.feature_LOCAL_11652.cs
+Autotest/Tests/QA/PublishedFilesTests/ViewMapFiles.feature.cs.orig
+Autotest/Tests/QA/PublishedFilesTests/ViewMapFiles.feature_BACKUP_11652.cs
+Autotest/Tests/QA/PublishedFilesTests/ViewMapFiles.feature_BASE_11652.cs

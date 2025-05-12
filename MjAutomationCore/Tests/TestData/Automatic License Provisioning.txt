@@ -1,0 +1,1 @@
+Automatic License Provisioning using Microsoft Azure Groups Customers using Microsoft Azure can now easily and efficiently provision and de-provision MindManager licenses simply by adding or removing users from groups in the Microsoft Azure admin portal.

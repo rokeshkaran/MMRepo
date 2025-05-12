@@ -1,0 +1,1174 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<UserSecretsId>b7566b15-a9a9-4670-ac3c-e6abbcf621bf</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="General\Api\NewFolder2\**" />
+		<Compile Remove="Pages\WebAppProject\MapTemplates\**" />
+		<Compile Remove="Steps\WebAppProject\Base\**" />
+		<Compile Remove="Tests\WebAppProject\Co-editing\CoEditing\NewTopicInfoboxUI\**" />
+		<Compile Remove="Tests\WebAppProject\NewTabTests\Filter\**" />
+		<EmbeddedResource Remove="General\Api\NewFolder2\**" />
+		<EmbeddedResource Remove="Pages\WebAppProject\MapTemplates\**" />
+		<EmbeddedResource Remove="Steps\WebAppProject\Base\**" />
+		<EmbeddedResource Remove="Tests\WebAppProject\Co-editing\CoEditing\NewTopicInfoboxUI\**" />
+		<EmbeddedResource Remove="Tests\WebAppProject\NewTabTests\Filter\**" />
+		<None Remove="General\Api\NewFolder2\**" />
+		<None Remove="Pages\WebAppProject\MapTemplates\**" />
+		<None Remove="Steps\WebAppProject\Base\**" />
+		<None Remove="Tests\WebAppProject\Co-editing\CoEditing\NewTopicInfoboxUI\**" />
+		<None Remove="Tests\WebAppProject\NewTabTests\Filter\**" />
+		<SpecFlowFeatureFiles Remove="General\Api\NewFolder2\**" />
+		<SpecFlowFeatureFiles Remove="Pages\WebAppProject\MapTemplates\**" />
+		<SpecFlowFeatureFiles Remove="Steps\WebAppProject\Base\**" />
+		<SpecFlowFeatureFiles Remove="Tests\WebAppProject\Co-editing\CoEditing\NewTopicInfoboxUI\**" />
+		<SpecFlowFeatureFiles Remove="Tests\WebAppProject\NewTabTests\Filter\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="General\Api\NewFolder2\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Pages\WebAppProject\MapTemplates\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Steps\WebAppProject\Base\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\WebAppProject\Co-editing\CoEditing\NewTopicInfoboxUI\**" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\WebAppProject\NewTabTests\Filter\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\LicensingProject\SalesPortal\CustomerManagementViaAPI - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\TaskInfo - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\WebAppProject\NewTabTests\EditingСapabilities\TextStyleSettings\TextStyleSettings - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\BackgroundImage - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\WebAppProject\NewTabTests\SidePanel\Images\Thumbnail\ChangesToSelectedImages - Copy.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\WebAppProject\NewTabTests\SidePanel\Properties\PropertiesFunctionality.feature.cs" />
+		<SpecFlowObsoleteCodeBehindFiles Remove="Tests\WebAppProject\Slides\Resources - Copy.feature.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Tests\TestData\MindManagerCloudFiles\3rdPartyMapLinks.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\AddProperties.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\AddResourceDuration.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\CardModeDefaultBehavior.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\ExcludedRule.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\ExportedFilter.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\FlowchartMap.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\GanttViewMode_SimpleMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\CommentNoteProperty.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Comments.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\CommonATMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\CommonEmptyATMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\ContentNotes.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\FilterMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\ImageMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\ManualOverride.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\MapInfo.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\MultiProperties.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\NavigationControlsMap.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Properties.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\SmartRulesCheck12.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\SUM.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\MIN.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Average.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\MAX.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\COUNT.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\PresetFilter.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Properties_for_check.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Recalculate_Hidder_filters.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Renumber_Hidden_Filter_2.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\RelationshipMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\ResourceCostA.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\GeneralCostA.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\TaskRollUp.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\TaskRollUpDuration.mmap">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\TotalResourceCost.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\TotalCost.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Priority.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Progress.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\DurationDays.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\DurationHours.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\DurationMinutes.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\EffortDays2.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\EffortHours.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\EffortMinutes3.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\SimilarFilterMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\SimpleMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\DropBoxFiles\SimpleMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\Slide.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\OneDriveFiles\CommentNoteProperty.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\Sample-jpg-image-5mb.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\CommentNoteProperty.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Map_For_Automation.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Slide.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\LeftTextAlign.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\RightAlign.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\CenterAlign.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="xunit.runner.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\rel_line_thickness.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\rel_line_colors.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutomationUtils" Version="1.1.93.2" />
+		<PackageReference Include="Azure.Identity" Version="1.13.2" />
+		<PackageReference Include="BoDi" Version="1.5.0" />
+		<PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.14.1" />
+		<PackageReference Include="Dropbox.Api" Version="7.0.0" />
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.58" />
+		<PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Graph" Version="5.46.0" />
+		<PackageReference Include="Microsoft.Identity.Web.GraphServiceClient" Version="2.17.5" />
+		<PackageReference Include="Microsoft.Identity.Web.MicrosoftGraph" Version="2.17.4" />
+		<PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.3.0" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+		<PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+		<PackageReference Include="Otp.NET" Version="1.3.0" />
+		<PackageReference Include="Reqnroll" Version="2.4.0" />
+		<PackageReference Include="Reqnroll.Tools.MsBuild.Generation" Version="2.4.0" />
+		<PackageReference Include="Reqnroll.xUnit" Version="2.4.0" />
+		<PackageReference Include="RestSharp" Version="110.2.0" />
+		<PackageReference Include="Selenium.Firefox.WebDriver" Version="0.27.0" />
+		<PackageReference Include="Selenium.Support" Version="4.19.0" />
+		<PackageReference Include="Selenium.WebDriver" Version="4.20.0" />
+		<PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="135.0.7049.8400" />
+		<PackageReference Include="Selenium.WebDriver.GeckoDriver" Version="0.34.0" />
+		<PackageReference Include="SeleniumAutomation.Framework" Version="1.0.2" />
+		<PackageReference Include="SeleniumAutomationUtils" Version="1.0.11" />
+		<PackageReference Include="Sigil" Version="5.0.0" />
+		<PackageReference Include="xRetry.Reqnroll" Version="1.0.0" />
+		<PackageReference Include="xunit" Version="2.9.3" />
+		<PackageReference Include="xunit.runner.visualstudio" Version="3.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\Additional.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminSelfRegistration\AdminSelfRegistration.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminSelfRegistration\InvitedByAnotherAdmin.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\Settings\AllowCoEditing.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\Settings\MindManagerSnap.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\Settings\OnlineStorageProviders.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\Settings\Publishing.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\Settings\Settings.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\SalesPortal\ApplySubscriptions.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\SnapProject\DragAndDropElementsFromInfoBox.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\SnapProject\InteractionWithIndividualUsers.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\SnapProject\Options.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\SnapProject\SidePanel\SidePanel.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\SnapProject\TeamSnapQueue\InteractionWithSnapTeam.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\SnapProject\TeamSnapQueue\ManagingOfPersonalSnapRequestsViaSnapUI.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\SnapProject\TeamSnapQueue\ManagingOfSnapTeamInvitationsViaSnapUI.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\BaseMMTests\LoginWithSSOGoogleSuite.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\BaseMMTests\LoginWithSSOMicrosoftAzure.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\Co-editing\CoEditing\CoEditingModeInteractions\CoEditingModeInteractions.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\AdminPanel.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AutomaticProvisioning\AutomaticProvisioningViaMSAzureGroupsAndSCIM.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AutomaticProvisioning\NotEnoughSeatsForNewlyAddedUsers.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\BaseTests\CreateAccount.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\AddAppend.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Administrate.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Deactivate.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Remove.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Replace.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Search.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\UserDetails.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\CustomerAdminPortal\AutomaticProvisioning\LoadTesting\LoadTestForProvisioning.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\LicenseSupport\ChangeUserInfo.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\LicenseSupport\Delete.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\LicenseSupport\Edit.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\LicenseSupport\LisenseSupport.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\LicenseSupport\Search.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\LicenseSupport\UserDetails.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\SalesPortal\InterconnectionWithAdminPortal\CustomerAdmin.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\SalesPortal\InterconnectionWithAdminPortal\Customers.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\SalesPortal\InterconnectionWithAdminPortal\Purchases.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\LicensingProject\SalesPortal\SalesPortal.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditAndAddByDragAndDrop\EditAndAddByDragAndDrop.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\Properties.feature.cs">
+			<DependentUpon>Properties.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\Comments\Comments.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditMode\EditFromContextMenu.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\Filter\ContextFilter.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\Filter\FilterSettingForShow.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\AddingTaskInfo.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\Comments.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\Filter\Filter.feature.cs">
+			<DependentUpon>Filter.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\Relationships\Relationships.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\BackgroundImageViaSidePanel.feature.cs">
+			<DependentUpon>BackgroundImageViaSidePanel.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\EditAndAddFromTheSidePane\EditAndAddFromTheSidePane.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\EditFromSidePanel.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\Icons.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\MultiSelectTopics.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\RemovingTaskInfo.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\Tags.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\TaskInfo.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\HotKeysAndQuickAddButtons\ViaToolbar.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\NewTopicInfoboxUI\EditMode.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\RelationshipLabels\RelationshipLabels.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\Design.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\Layout.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\Text.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditMode\TaskProperties.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\Images\Thumbnail\ChangesToAllImages.feature.cs">
+			<DependentUpon>ChangesToAllImages.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\SidePanel\Properties\Properties.feature.cs">
+			<DependentUpon>Properties.feature</DependentUpon>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\EditMode\TextAccelerators\TextAccelerators.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\TopMenu\Design.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\TopMenu\File.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\TopMenu\Search.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\TopMenu\Share.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\NewTabTests\TopMenu\View.feature.cs">
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Tests\WebAppProject\Slides\Backgrounds.feature.cs">
+			<DependentUpon>Backgrounds.feature</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\10000Emails.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\10000EmailsForReplace.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\10000EmailsTestReplace.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\100Emails.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\100EmailsForReplace.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\15000UserEmail.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\5000Emails.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\50Emails.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\5Emails.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\Automatic License Provisioning.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\Business profile info.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\CoolFreesh.jfif">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\FruitImages.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\This_is_a_test_to_determine_if_the_three_dots_appear.pdf">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\10mbImage.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\15mbImage.jpg">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\FruitsOutlineIcon.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\ice_video_20190806-124540.webm">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\InvalidListEmailAddress.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManager-Snap.crx">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PerformanceUsers.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\Icons mode.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\Map_For_Automation.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\Slide.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\hyperlinkstopics.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\CardModeDefaultBehavior.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\resources_task_info.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\General Tags.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\Custom Tags.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\Hyperlink.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\SmartShapes.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\PublishedFiles\Tags mode.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SCIMUsersIdStg.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\Scorpions_-_Wind_of_Change_.mp3">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\12_Test_Title %283%29.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\12_Test_Title.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\AddResourceDuration.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\autotest.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Comments.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\CommonATMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\CommonEmptyATMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\ContentNotes.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\CardMode.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\StickyNotes.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\CardModeOnRight.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\StickyNotesOnRight.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\dcdscdcf.mdeck">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\ExcludedRule.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\FlowchartMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\ManualOverride.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\MultiProperties.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\AddProperties.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\NavigationControlsMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Properties.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\SearchMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\RelationshipMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\SimpleMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\PresetFilter.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\MapInfo.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\SmartRulesCheck12.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\ExportedFilter.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Tags_mode.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\TaskRollUp.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\TaskRollUpDuration.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\ImageMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\FilterMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\TopicInfobox.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\ViewingOptions.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\SUM.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\MIN.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Average.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\MAX.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\COUNT.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\CardModeDefaultBehavior.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\ResourceCostA.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\GeneralCostA.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\TotalResourceCost.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\TotalCost.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Priority.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Progress.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\DurationDays.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\DurationHours.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\DurationMinutes.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\EffortDays2.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\EffortHours.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\EffortMinutes3.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\TopicAuthorDetail.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Notes.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\BoxFiles\SimpleMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\OneDriveFiles\SimpleMap.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\SharePointFiles\Properties_for_check.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\TESTAUTO.csv">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\testautomation.html">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\UsersID.txt">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="Tests\TestData\MindManagerCloudFiles\StickyNotes.mmap">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\Additional.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Additional.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminSelfRegistration\AdminSelfRegistration.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>AdminSelfRegistration.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminSelfRegistration\InvitedByAnotherAdmin.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>InvitedByAnotherAdmin.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\Settings\AllowCoEditing.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>AllowCoEditing.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\Settings\MindManagerSnap.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>MindManagerSnap.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\Settings\OnlineStorageProviders.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>OnlineStorageProviders.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\Settings\Publishing.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Publishing.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\Settings\Settings.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\SalesPortal\ApplySubscriptions.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>ApplySubscriptions.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\SalesPortal\CustomerManagementViaAPI.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\SnapProject\DragAndDropElementsFromInfoBox.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>DragAndDropElementsFromInfoBox.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\SnapProject\InteractionWithIndividualUsers.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>InteractionWithIndividualUsers.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\SnapProject\Options.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Options.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\SnapProject\SidePanel\SidePanel.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>SidePanel.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\SnapProject\TeamSnapQueue\InteractionWithSnapTeam.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>InteractionWithSnapTeam.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\SnapProject\TeamSnapQueue\ManagingOfPersonalSnapRequestsViaSnapUI.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>ManagingOfPersonalSnapRequestsViaSnapUI.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\SnapProject\TeamSnapQueue\ManagingOfSnapTeamInvitationsViaSnapUI.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>ManagingOfSnapTeamInvitationsViaSnapUI.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\BaseMMTests\LoginWithSSOGoogleSuite.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>LoginWithSSOGoogleSuite.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\BaseMMTests\LoginWithSSOMicrosoftAzure.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>LoginWithSSOMicrosoftAzure.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\Accounts\AddClouds\CloudServices\BoxTests\LoginLogout.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\Accounts\AddClouds\CloudServices\BoxTests\OpenAndCloseFile.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\Accounts\AddClouds\CloudServices\BoxTests\SortFiles.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\Accounts\AddClouds\CloudServices\GoogleTests\LoginLogout.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\Accounts\AddClouds\CloudServices\OneDriveTests\LoginLogout.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\Co-editing\CoEditing\CoEditingModeInteractions\CoEditingModeInteractions.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>CoEditingModeInteractions.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\AdminPanel.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>AdminPanel.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AutomaticProvisioning\AutomaticProvisioningViaMSAzureGroupsAndSCIM.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>AutomaticProvisioningViaMSAzureGroupsAndSCIM.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AutomaticProvisioning\NotEnoughSeatsForNewlyAddedUsers.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>NotEnoughSeatsForNewlyAddedUsers.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\BaseTests\CreateAccount.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>CreateAccount.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\AddAppend.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>AddAppend.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Administrate.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Administrate.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Deactivate.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Deactivate.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Remove.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Remove.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Replace.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Replace.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\Search.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Search.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AdminPanel\UserDetails.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>UserDetails.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\CustomerAdminPortal\AutomaticProvisioning\LoadTesting\LoadTestForProvisioning.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>LoadTestForProvisioning.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\LicenseSupport\ChangeUserInfo.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>ChangeUserInfo.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\LicenseSupport\Delete.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Delete.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\LicenseSupport\Edit.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Edit.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\LicenseSupport\LisenseSupport.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>LisenseSupport.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\LicenseSupport\Search.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Search.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\LicenseSupport\UserDetails.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>UserDetails.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\SalesPortal\InterconnectionWithAdminPortal\CustomerAdmin.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>CustomerAdmin.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\SalesPortal\InterconnectionWithAdminPortal\Customers.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Customers.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\SalesPortal\InterconnectionWithAdminPortal\Purchases.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Purchases.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\LicensingProject\SalesPortal\SalesPortal.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>SalesPortal.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditAndAddByDragAndDrop\EditAndAddByDragAndDrop.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>EditAndAddByDragAndDrop.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\Comments\Comments.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Comments.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditMode\EditFromContextMenu.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>EditFromContextMenu.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\Filter\ContextFilter.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>ContextFilter.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\Filter\FilterSettingForShow.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>FilterSettingForShow.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\AddingTaskInfo.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>AddingTaskInfo.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\Comments.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Comments.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\Filter\Filter.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\Relationships\Relationships.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Relationships.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\BackgroundImageViaSidePanel.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\EditAndAddFromTheSidePane\EditAndAddFromTheSidePane.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>EditAndAddFromTheSidePane.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\EditFromSidePanel.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>EditFromSidePanel.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\Icons.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Icons.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\MultiSelectTopics.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>MultiSelectTopics.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\RemovingTaskInfo.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>RemovingTaskInfo.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\Tags.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Tags.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\MultiSelect\TaskInfo.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>TaskInfo.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\HotKeysAndQuickAddButtons\ViaToolbar.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>ViaToolbar.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\NewTopicInfoboxUI\EditMode.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>EditMode.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\RelationshipLabels\RelationshipLabels.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>RelationshipLabels.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\Design.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Design.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\Layout.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Layout.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\DesignPanel\Text.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Text.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditMode\TaskProperties.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>TaskProperties.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\Images\Thumbnail\ChangesToAllImages.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\SidePanel\Properties\Properties.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\EditingСapabilities\EditMode\TextAccelerators\TextAccelerators.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>TextAccelerators.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\TopMenu\Design.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Design.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\TopMenu\File.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>File.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\TopMenu\Search.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Search.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\TopMenu\Share.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>Share.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\NewTabTests\TopMenu\View.feature">
+			<Generator>SpecFlowSingleFileGenerator</Generator>
+			<LastGenOutput>View.feature.cs</LastGenOutput>
+		</SpecFlowFeatureFiles>
+		<SpecFlowFeatureFiles Update="Tests\WebAppProject\Slides\Backgrounds.feature">
+			<Visible>$(UsingMicrosoftNETSdk)</Visible>
+			<CodeBehindFile>%(RelativeDir)%(Filename).feature$(DefaultLanguageSourceExtension)</CodeBehindFile>
+		</SpecFlowFeatureFiles>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Steps\WebAppProject\Components\ColorPicker\" />
+		<Folder Include="Steps\WebAppProject\MainPage\NewFolder\" />
+		<Folder Include="Tests\LicensingProject\CustomerAdminPortal\Administrate\" />
+		<Folder Include="Tests\LicensingProject\CustomerAdminPortal\DownloadsAndDocumentation\CustomerWithOnlineLicensesOnly\" />
+		<Folder Include="Tests\LicensingProject\CustomerAdminPortal\DownloadsAndDocumentation\CustomerWithOfflineLicenseOnly\" />
+		<Folder Include="Tests\LicensingProject\CustomerAdminPortal\SSOSetup\" />
+		<Folder Include="Tests\LicensingProject\Licenses\ApplySubscriptions\" />
+		<Folder Include="Tests\LicensingProject\Licenses\PromoLicense\" />
+		<Folder Include="Tests\LicensingProject\MindManagerAccounts\" />
+		<Folder Include="Tests\SnapProject\SidePanel\Search\" />
+		<Folder Include="Tests\TestData\BoxFiles\" />
+		<Folder Include="Tests\WebAppProject\Accounts\MindManagerCloud\LinkInvitations\" />
+		<Folder Include="Tests\WebAppProject\Accounts\MindManagerCloud\MoveFolder\" />
+		<Folder Include="Tests\WebAppProject\Accounts\MindManagerCloud\EmailInvitations\" />
+		<Folder Include="Tests\WebAppProject\Accounts\MindManagerCloud\RecentFiles\" />
+		<Folder Include="Tests\WebAppProject\Accounts\MindManagerCloud\OwnLocations\Share\" />
+		<Folder Include="Tests\WebAppProject\Accounts\MindManagerCloud\OwnLocations\Duplicate\" />
+		<Folder Include="Tests\WebAppProject\Accounts\MindManagerCloud\OwnLocations\OpenFiles\FromRoot\" />
+		<Folder Include="Tests\WebAppProject\Accounts\MindManagerCloud\OwnLocations\RenameFilesFolders\" />
+		<Folder Include="Tests\WebAppProject\Accounts\PublishedFiles\" />
+		<Folder Include="Tests\WebAppProject\Co-editing\CoEditing\CoEditingModeInteractions\UndoRedo\" />
+		<Folder Include="Tests\WebAppProject\Co-editing\BaseCoEditingTests\MindManagerCloud\" />
+		<Folder Include="Tests\WebAppProject\Co-editing\CoEditing\General\" />
+		<Folder Include="Tests\WebAppProject\DownloadLibrary\" />
+		<Folder Include="Tests\WebAppProject\MindjetStore\" />
+		<Folder Include="Tests\WebAppProject\Analytics\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\EditMode\LiveCalculations\TaskRollUp\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\EditMode\LiveCalculations\SmartRules\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\ColorPicker\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\CardMode\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\StatusOverlay\FileStates\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\StatusOverlay\MissingInfoStates\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\TextBoxes\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\Shapes\EditShapesBO\ViaContextMenu\SmartShapes\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\StandardImages\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\Topics\FloatingToolbar\InvokeFloatingMenu\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\Topics\FloatingToolbar\OpenSidePanel\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\NewTopicInfoboxUI\EditMode\OneLineTopicInfo\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\SidePanel\NumericalZoomLevel\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\SidePanel\Notes\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\Templates\Home\Search\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\Templates\TemplatePreviewAndCreation\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\Templates\SideMenu\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\EditingСapabilities\MiniMap\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\SidePanel\Icons\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\SidePanel\FormatShape\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\SidePanel\TaskInformation\" />
+		<Folder Include="Tests\WebAppProject\NewTabTests\SidePanel\Tags\" />
+		<Folder Include="Tests\WebAppProject\StickyNotes\TextFormatting\" />
+	</ItemGroup>
+
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties appsettings_1json__JsonSchema="https://json.schemastore.org/appsscript.json" />
+		</VisualStudio>
+	</ProjectExtensions>
+
+</Project>

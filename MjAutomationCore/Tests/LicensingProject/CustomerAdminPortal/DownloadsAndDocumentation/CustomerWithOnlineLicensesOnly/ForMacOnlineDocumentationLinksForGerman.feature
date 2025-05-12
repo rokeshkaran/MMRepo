@@ -1,0 +1,48 @@
+﻿@retry(2)
+Feature: ForMacOnlineDocumentationLinksForGerman
+
+Background: Pre-condition
+	#Sales portal
+	When User creates new Customer on Sales portal via Api
+		| Name                | Type       |
+		| Automation_testSRND | enterprise |
+	When User creates new Purchase on Sales portal via Api
+		| CustomerName        | Seats | ProductId      | EndDate |
+		| Automation_testSRND | 1     | MMSUBSCRIPTION | D(1)    |
+	#Admin portal
+	When User is logged in to 'Automation_testSRND' customer on Admin portal via Api
+	When admin 'Automation_testSRND' accepts BULA terms via API
+	When User refresh page
+	When User accepts Optanon cookies
+	When User clicks 'Downloads' button
+
+@Licensing @CustomerAdminPortal @DownloadsANDDocumentation @OnlineLicense @QA @Staging @Qase[LICENSE-534] @Locale_German @Cleanup
+Scenario Outline: To_verify_that_it_is_possible_to_open_Online_help_from_Mac_section_online_Locale_German
+	When User clicks on 'Online-Hilfe' link in 'Für Mac' section
+	When User switches to '1' tab
+	When User waits for data loading
+	Then page url is 'https://www.mindmanager.com/de/support/product-registration/user-manuals-and-online-help/?'
+	When User clicks 'Online-Hilfe' link for 'MindManager 24 für Mac' product on MindManager online help page
+	When User switches to '2' tab
+	Then page url is 'https://help.mindjet.com/24/index.html?app=MindManager&lang=de'
+	When User close Active tab
+	When User switches to '1' tab
+	When User clicks 'Online-Hilfe' link for 'MindManager 23 für Mac' product on MindManager online help page
+	When User switches to '2' tab
+	Then page url is 'https://help.mindjet.com/23/index.html?app=MindManager&lang=de'
+	When User close Active tab
+	When User switches to '1' tab
+	When User clicks 'Online-Hilfe' link for 'MindManager 22 (14) für Mac' product on MindManager online help page
+	When User switches to '2' tab
+	Then page url is 'https://help.mindjet.com/22/index.html?app=MindManager&lang=de'
+
+Examples:
+	| customerName        |
+	| Automation_testSRND |
+
+@Licensing @CustomerAdminPortal @DownloadsANDDocumentation @OnlineLicense @QA @Staging @Qase[LICENSE-513] @Cleanup @Locale_German
+Scenario Outline: To_verify_that_it_is_possible_to_open_MindManager_Mac_Release_Notes_online_Locale_German
+	When User clicks on 'Versionshinweise' link in 'Für Mac' section
+	When User switches to '1' tab
+	# As per MMCV-9409, it is as designed
+	Then page url is 'https://download.mindjet.com/MindManager_24_Mac_Release_Notes_EN.pdf'
